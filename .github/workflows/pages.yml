@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Configurar Python
-        uses: actions/setup-python@v5
+          uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Ejecutar puertas de calidad
@@ -39,11 +39,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Descargar código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Preparar GitHub Pages
-        uses: actions/configure-pages@v5
+          uses: actions/configure-pages@v5
+          with:
+            enablement: true
       - name: Crear artefacto estático
-        uses: actions/upload-pages-artifact@v3
+          uses: actions/upload-pages-artifact@v4
         with:
           path: .
       - name: Publicar en GitHub Pages
