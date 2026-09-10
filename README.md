@@ -28,3 +28,10 @@ Después abre `http://localhost:8000` en el navegador. También puedes abrir `in
 - La línea de tiempo usa botones con roles ARIA y navegación con flechas arriba/abajo.
 - Las imágenes tienen textos `alt` descriptivos, carga diferida en la galería y proceden de Wikimedia Commons.
 - El layout incluye puntos de adaptación para móvil, tableta y escritorio.
+
+## CI/CD
+
+Cada pull request y cada push a `main` ejecutan `scripts/ci_check.py`. La puerta
+de calidad valida estructura accesible, textos alternativos, recursos locales,
+enlaces externos HTTPS y respuestas HTTP. Solo si pasa se despliega el sitio en
+GitHub Pages mediante `.github/workflows/pages.yml`.
