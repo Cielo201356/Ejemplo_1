@@ -41,7 +41,7 @@ jobs:
       - name: Descargar código
         uses: actions/checkout@v5
       - name: Preparar GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
       - name: Crear artefacto estático
@@ -50,4 +50,4 @@ jobs:
           path: .
       - name: Publicar en GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
