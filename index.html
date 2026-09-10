@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Perfil visual e interactivo de Cristiano Ronaldo: biografía, trayectoria, estadísticas y galería.">
+  <title>Cristiano Ronaldo | Perfil y trayectoria</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Volver al inicio">
+        <span class="brand-mark" aria-hidden="true">CR7</span>
+        <span>Trayectoria <strong>CR7</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-label">Menú</span>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#estadisticas">Cifras</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Fútbol · Portugal · 1985</p>
+          <h1 id="hero-title">Cristiano <span>Ronaldo</span></h1>
+          <p class="hero-lede">Una carrera construida con velocidad, disciplina y una ambición que convirtió cada temporada en un nuevo desafío.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#trayectoria">Explorar trayectoria <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#estadisticas">Ver cifras</a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo con la camiseta de Portugal durante un partido" width="800" height="1000">
+          </div>
+          <p class="image-credit">Imagen: Wikimedia Commons</p>
+        </div>
+      </div>
+      <div class="hero-stripe" aria-hidden="true"></div>
+    </section>
+
+    <section class="section profile-section" id="perfil" aria-labelledby="perfil-title">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">El perfil</p>
+          <h2 id="perfil-title">Más que un delantero</h2>
+        </div>
+        <div class="profile-text">
+          <p class="lead">Nacido en Funchal, Madeira, Cristiano Ronaldo dos Santos Aveiro pasó de un barrio atlántico a convertirse en uno de los futbolistas más reconocibles de su generación.</p>
+          <p>Su juego ha evolucionado con el tiempo: extremo eléctrico en sus primeros años, goleador decisivo en el área y líder de una selección portuguesa que conquistó la Eurocopa de 2016 y la Liga de Naciones de 2019.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="trayectoria" aria-labelledby="trayectoria-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">El camino</p>
+            <h2 id="trayectoria-title">Una línea de tiempo en movimiento</h2>
+          </div>
+          <p class="section-intro">Selecciona una etapa para recorrer los momentos que definieron su carrera.</p>
+        </div>
+        <div class="timeline-layout">
+          <div class="timeline-tabs" role="tablist" aria-orientation="vertical" aria-label="Etapas de la trayectoria">
+            <button class="timeline-tab is-active" id="tab-sporting" type="button" role="tab" aria-selected="true" aria-controls="panel-sporting" data-target="sporting">2002–2003 <span>Sporting CP</span></button>
+            <button class="timeline-tab" id="tab-united" type="button" role="tab" aria-selected="false" aria-controls="panel-united" data-target="united">2003–2009 <span>Manchester United</span></button>
+            <button class="timeline-tab" id="tab-madrid" type="button" role="tab" aria-selected="false" aria-controls="panel-madrid" data-target="madrid">2009–2018 <span>Real Madrid</span></button>
+            <button class="timeline-tab" id="tab-juventus" type="button" role="tab" aria-selected="false" aria-controls="panel-juventus" data-target="juventus">2018–2021 <span>Juventus</span></button>
+            <button class="timeline-tab" id="tab-portugal" type="button" role="tab" aria-selected="false" aria-controls="panel-portugal" data-target="portugal">2016–hoy <span>Portugal</span></button>
+          </div>
+          <div class="timeline-card">
+            <article class="timeline-panel is-visible" id="panel-sporting" role="tabpanel" aria-labelledby="tab-sporting">
+              <p class="panel-kicker">Primer salto</p><h3>La promesa de Madeira</h3><p>Debutó con el primer equipo del Sporting CP en 2002. Su desborde y personalidad llamaron la atención desde el inicio.</p>
+            </article>
+            <article class="timeline-panel" id="panel-united" role="tabpanel" aria-labelledby="tab-united" hidden>
+              <p class="panel-kicker">La consagración</p><h3>De promesa a estrella</h3><p>En Manchester United ganó tres Premier League y su primera Champions League, además del Balón de Oro de 2008.</p>
+            </article>
+            <article class="timeline-panel" id="panel-madrid" role="tabpanel" aria-labelledby="tab-madrid" hidden>
+              <p class="panel-kicker">La era dorada</p><h3>El goleador histórico</h3><p>Con el Real Madrid conquistó cuatro Champions League y se convirtió en el máximo goleador histórico del club.</p>
+            </article>
+            <article class="timeline-panel" id="panel-juventus" role="tabpanel" aria-labelledby="tab-juventus" hidden>
+              <p class="panel-kicker">Un nuevo reto</p><h3>Italia también fue suya</h3><p>En la Serie A sumó dos Scudetti y mantuvo su producción goleadora en una de las ligas más tácticas de Europa.</p>
+            </article>
+            <article class="timeline-panel" id="panel-portugal" role="tabpanel" aria-labelledby="tab-portugal" hidden>
+              <p class="panel-kicker">La camiseta nacional</p><h3>Capitán de Portugal</h3><p>Fue decisivo en la Euro 2016 y en la Liga de Naciones 2019, dos títulos que marcaron la historia del fútbol portugués.</p>
+            </article>
+            <div class="timeline-progress" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section" id="estadisticas" aria-labelledby="stats-title">
+      <div class="container">
+        <div class="section-heading compact-heading"><div><p class="eyebrow">En números</p><h2 id="stats-title">Una escala extraordinaria</h2></div><p class="section-intro">Cifras de títulos y reconocimientos individuales.</p></div>
+        <dl class="stats-grid">
+          <div class="stat"><dt>Balones de Oro</dt><dd>5</dd></div>
+          <div class="stat"><dt>Champions League</dt><dd>5</dd></div>
+          <div class="stat"><dt>Botas de Oro</dt><dd>7</dd></div>
+          <div class="stat"><dt>Partidos oficiales</dt><dd>1.000+</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">En imágenes</p><h2 id="gallery-title">Instantes de una carrera</h2></div><a class="text-link" href="https://commons.wikimedia.org/wiki/Category:Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Ver fuente de imágenes <span class="visually-hidden">(se abre en una pestaña nueva)</span>↗</a></div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-wide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano%20Ronaldo%20-%20October%2012,%202010.jpg" alt="Cristiano Ronaldo durante un partido en 2010" loading="lazy" width="1200" height="800"><figcaption>La celebración como lenguaje universal.</figcaption></figure>
+          <figure class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/C.Ronaldo.jpg" alt="Retrato de Cristiano Ronaldo" loading="lazy" width="800" height="1000"><figcaption>Con Portugal, siempre al frente.</figcaption></figure>
+          <figure class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo vistiendo la camiseta de Portugal" loading="lazy" width="800" height="1000"><figcaption>Una camiseta, una responsabilidad.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><p><strong>TRAYECTORIA CR7</strong> · Proyecto editorial estático</p><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+</body>
+</html>
